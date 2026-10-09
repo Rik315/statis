@@ -4,11 +4,12 @@
 <style>
 
 .dropbtn {
-    background-color: black;
+    background-color: rgba(185, 40, 40, 0.523);
     color: white;
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
     border: none;
+    width: 300px;
 }
 
 .dropdown {
@@ -35,8 +36,49 @@
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: grey;}
 
+header {
+    padding: 20px;
+
+    width: auto;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 20px;
+
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+header a {
+    text-decoration: solid;
+    color:black
+}
+
 </style>
 </head>
+<body>
+
+    <header>
+        <h2>Perjalanan<span>.</span></h2>
+        <nav>
+            <ul>
+                <li><a href="../beranda/index.html">Beranda</a></li>
+                <li><a href="../destinasi/index.html">Destinasi</a></li>
+                <li><a href="../about/about.html" class="active">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
 
 <div class="dropdown">
 <button class="dropbtn">Klik Disini</button>
